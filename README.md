@@ -7,5 +7,5 @@ The API and all the information related can be found here: http://open-notify.or
 We get the information by connecting to the site:
 ```
 response = requests.get("http://api.open-notify.org/astros.json")
-print(response.status_code)```
-
+print(response.status_code)
+```
