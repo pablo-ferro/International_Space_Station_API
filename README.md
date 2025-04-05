@@ -1,6 +1,6 @@
 # International Space Station Tracker
 
-![ISS Tracker Website](ISS_website.png)
+![ISS Tracker Website](ISS_Website.png)
 
 A static website that displays the current position of the International Space Station with a spacecraft icon, crew information, and light/dark mode toggle.
 
