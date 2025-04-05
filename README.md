@@ -1,13 +1,40 @@
-# International Space Station API
+# International Space Station Tracker
 
-- Update! Now the API gives back Astronauts in the space, not only in the ISS, but also the Shenzhou 13.
+![ISS Tracker Screenshot](screenshot.png)
 
-Trying the basic functionalities of the ISS API. How many people are in the Space right now? Let's code and see.
+A static website that displays the current position of the International Space Station with a spacecraft icon, crew information, and light/dark mode toggle.
 
-The API and all the information related can be found here: http://open-notify.org/Open-Notify-API/People-In-Space/
+## Features
 
-We get the information by connecting to the site:
-```
-response = requests.get("http://api.open-notify.org/astros.json")
-print(response.status_code)
-```
+- 🛰️ Real-time ISS position snapshot (at time of generation)
+- 👨‍🚀 Current crew member information
+- 🌍 Interactive map with custom spacecraft icon
+- 🌗 Light/Dark mode toggle (changes water color to dark grey)
+- 📱 Responsive design works on all devices
+- ⏳ Static HTML (perfect for GitHub Pages)
+
+## How It Works
+
+This project uses:
+- The [Open Notify API](http://open-notify.org/Open-Notify-API/) for ISS data
+- [Leaflet.js](https://leafletjs.com/) for interactive maps
+- Pure HTML/CSS/JavaScript (no frameworks needed)
+
+The website shows:
+- Current ISS latitude/longitude
+- Number of astronauts aboard
+- Crew member names
+- Last update time
+- Visual orbit path
+
+## How to Use
+
+1. Visit the [live GitHub Pages site](https://yourusername.github.io/repository)
+2. View the ISS current position
+3. Toggle dark mode using the button below the info panel
+
+## Development
+
+To regenerate the static HTML with current data:
+```bash
+python generate_iss_tracker.py
